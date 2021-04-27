@@ -103,7 +103,9 @@ end
 
 Now that the `edit` view template will have access to the `Article` object (stored
 in `@article`), we need to refactor the form so that it auto-fills the form fields
-with the corresponding data from `@article`. We'll also use a different form helper, `form_for`, which will automatically set up the url where the form will be sent. These changes can be seen below:
+with the corresponding data from `@article`. We'll also use a different form helper, 
+`form_for`, which will automatically set up the url where the form will be sent. 
+These changes can be seen below:
 
 ```erb
 <% # app/views/articles/edit.html.erb %>
@@ -138,8 +140,9 @@ end
 ```
 
 The `raise` method will cause the application to pause and print out the
-`params` on an error page. You could also see the `params` if you called `puts params.inspect`; using `puts` would simply require you to track down the data in
-the Rails server log.
+`params` on an error page. You could also see the `params` if you called 
+`puts params.inspect`; using `puts` would simply require you to track 
+down the data in the Rails server log.
 
 If you open up the browser, navigate to an edit page (such as
 `localhost:3000/articles/2/edit`), change some elements in the form, and submit it,
